@@ -5,15 +5,12 @@ import java.util.Scanner;
 
 public class _01_FindText{
     // by noss
-    public int solutionMy(String str, char ch) {
+    public int mySolution(String str, char ch) {
         int cnt = 0;
-        
         for(char x : str.toCharArray()){
-            //System.out.println("x = "+x);
             if(ch==x){
                 cnt++;
             }
-            //System.out.println("cnt = "+cnt);
         }
         return cnt;
     }
