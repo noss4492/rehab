@@ -2,7 +2,7 @@ import java.io.CharArrayReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class S01FindText{
+public class S01CountCharacter{
     // by noss
     public int mySolution(String str, char ch) {
         int cnt = 0;
@@ -27,7 +27,7 @@ public class S01FindText{
         return cnt;
     }
     public static void main(String[] args) throws IOException {
-        S01FindText T = new S01FindText();
+        S01CountCharacter T = new S01CountCharacter();
         /*
         Scanner sc = new Scanner(System.in);
         String str1 = sc.next().toLowerCase();
