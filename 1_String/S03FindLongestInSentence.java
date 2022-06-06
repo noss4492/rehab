@@ -5,15 +5,15 @@ public class S03FindLongestInSentence {
     public String mySolution(String str) {
         String word[] = str.split(" ");
         int max = 0;
-        String longestword = new String();
+        String longestWord = new String();
         
         for (int i = 0; i < word.length; i++) {
             if (word[i].length() > max) {
                 max = word[i].length();
-                longestword = word[i];
+                longestWord = word[i];
             }
         }
-        return longestword;
+        return longestWord;
     }
 
 
@@ -41,6 +41,7 @@ public class S03FindLongestInSentence {
                 m=len;
                 answer=tmp;
             }
+            str=str.substring(pos+1);
         }
         if(str.length()>m) answer=str;
         return answer;
