@@ -42,7 +42,6 @@ public class S04FlipWords {
                 right--;
             }
             String tmp = String.valueOf(tmpCharArr);
-            System.out.println("tmp : "+tmp);
             answer.add(tmp);
         }
         return answer;
