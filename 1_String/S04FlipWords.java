@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class S04FlipWords {
     // my solution 1
-    public ArrayList<StringBuilder> solution(int n, String[] words) {
+    public ArrayList<StringBuilder> solution1(int n, String[] words) {
         
         ArrayList<StringBuilder> answer = new ArrayList<StringBuilder>();
         answer.clear();
@@ -26,7 +26,7 @@ public class S04FlipWords {
     }
 
     // my solution 2, other style 2 (make reverse function)
-    public ArrayList<String> solution3(int n, String[] str){
+    public ArrayList<String> solution(int n, String[] str){
         ArrayList<String> answer = new ArrayList<>();
         for(String x : str){
             char[] tmpCharArr = x.toCharArray();
@@ -60,7 +60,7 @@ public class S04FlipWords {
         // for(StringBuilder x : T.solution(linesNum, words)){
         //     System.out.println(x);
         // }
-        for(String x : T.solution3(linesNum, words)){
+        for(String x : T.solution(linesNum, words)){
             System.out.println(x);
         }
     }
